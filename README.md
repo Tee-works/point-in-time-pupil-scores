@@ -20,9 +20,9 @@ The models run in order and can be re-run:
 | `02_pupil_topic_score_history` | one row per pupil, topic and score change | A type-2 history kept on **two clocks**. `valid_from`/`valid_to` say when a score was true in the world (answer time). `known_from` says when the warehouse could first have shown it (load time). |
 | `03_term_end_scores` | one row per pupil and topic | "What was the score at the end of term?", answered two ways: **restated** (with everything known now) and **as reported** (what a dashboard could have shown on the last day). |
 
-## What it found
+## What it shows
 
-- **57 of 1,500 term-end pupil-topic scores (3.8%, across 53 pupils) changed after term ended**, because late offline answers landed afterwards. The largest move was 0.107, about 11 percentage points.
+- The late answers are planted, so the point isn't that they exist. The point is that **the model keeps the 57 of 1,500 term-end pupil-topic scores (3.8%, across 53 pupils) restated after term apart from what teachers originally saw.** The largest move was 0.107, about 11 percentage points.
 - So "the score last term" means two different things. A report of what teachers were told needs the *as reported* view. A model trained on true ability needs the *restated* one. Building one table that silently mixes them is how a predicted grade drifts from what a teacher remembers seeing.
 
 ## Checks and tests
