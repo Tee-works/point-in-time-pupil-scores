@@ -54,5 +54,3 @@ The SQL uses window functions and `QUALIFY`, which BigQuery supports. In dbt:
 - `stg_responses` would be an incremental model keyed on `response_id`, with a lookback over `loaded_at` wide enough for offline syncs.
 - The history would be built from that model, not from a dbt snapshot, because snapshots capture *load* time. Point-in-time correctness here needs *answer* time as well.
 - The checks would become dbt tests.
-
-Built with Claude Code. Every line was reviewed, and the tests show it works rather than asking you to take my word for it.
