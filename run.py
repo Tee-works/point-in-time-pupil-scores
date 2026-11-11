@@ -48,7 +48,7 @@ def check(con) -> dict:
 
 
 if __name__ == "__main__":
-    db = sys.argv[1] if len(sys.argv) > 1 else "atom_demo.duckdb"
+    db = sys.argv[1] if len(sys.argv) > 1 else "pupil_scores.duckdb"
     con = build(db)
     print("fingerprint", fingerprint(con)[:16])
     for k, v in check(con).items():

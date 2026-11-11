@@ -1,8 +1,8 @@
 # Point-in-time pupil scores
 
-A small, honest demo built for Atom Learning's Senior Data Engineer role by Iyanujesu Taiwo Akinyefa. It runs on **synthetic data only**, with no real pupils or Atom data.
+A small, honest demo by Iyanujesu Taiwo Akinyefa. It runs on **synthetic data only**, with no real pupils.
 
-The job ad names four hard parts: the right grain, point-in-time correctness ("reconstruct a pupil's score as it stood last term"), builds that give the same answer every time, and catching data quality problems before they reach a teacher. This repo works on all four in about 150 lines of SQL and Python.
+Pupil assessment data has four hard parts: the right grain, point-in-time correctness ("reconstruct a pupil's score as it stood last term"), builds that give the same answer every time, and catching data quality problems before they reach a teacher. This repo works on all four in about 150 lines of SQL and Python.
 
 ## What it does
 

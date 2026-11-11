@@ -47,4 +47,4 @@ def generate(path: str, seed: int = 7, pupils: int = 300) -> dict:
 
 
 if __name__ == "__main__":
-    print(generate("atom_demo.duckdb"))
+    print(generate("pupil_scores.duckdb"))
